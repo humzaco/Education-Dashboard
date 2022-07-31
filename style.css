@@ -6,6 +6,7 @@
 /*---------- COLORS  ----------*/
 :root{
     --primary: #E5920E;
+    --primary-light: #815f2a;
     --secondary: #282B3A;
     --success: #0CAB97;
     --danger: #FF4E4D;
@@ -169,3 +170,83 @@ main aside .scheduled-events .event-items > div:hover {
 
 
 
+
+
+/*========= MIDDLE TOP ========== */
+section.middle {
+    margin: 2rem;
+}
+
+section.middle .middle-top .middle-top-profile img {
+    width: 55px;
+    height: 55px;
+}
+
+section.middle .middle-top .middle-top-profile h3 {
+    font-weight: 200;
+    color: var(--pure);
+    padding-left: 20px;
+    opacity: 0.8;
+}
+
+section.middle .middle-top .middle-top-search .search-bar {
+    background: var(--secondary);
+    padding: 13px 0;
+    border-radius: 30px 5px 5px 30px;
+    padding: 0.8rem 5rem 0.8rem 1rem;
+}
+
+
+section.middle .middle-top .middle-top-search .search-bar input[type="search"] {
+    background: transparent;
+    width: 100%;
+    color: var(--pure);
+}
+
+section.middle .middle-top .middle-top-search .search-bar input[type="search"]::placeholder {
+    color: var(--font);
+}
+
+section.middle .middle-top .middle-top-search .search-icon {
+    background: var(--primary-light);
+    color: var(--pure);
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    border-radius: 15px 30px 30px 15px;
+    margin-right: 1.5rem;
+}
+
+section.middle .middle-top .middle-top-search .chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: var(--primary);
+    color: var(--pure);
+    border-radius: 15px;
+    margin-right: 3rem;
+}
+
+section.middle .middle-top .middle-top-search .notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: var(--primary-light);
+    color: var(--pure);
+    border-radius: 30px;
+}
+
+section.middle .middle-top .middle-top-search .notification-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+    color: var(--pure);
+    font-size: 8px;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    margin: 0 0 17px -8px;
+}
