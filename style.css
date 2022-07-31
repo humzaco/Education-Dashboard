@@ -1,0 +1,171 @@
+/*---------- FONTS  ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+
+/*---------- COLORS  ----------*/
+:root{
+    --primary: #E5920E;
+    --secondary: #282B3A;
+    --success: #0CAB97;
+    --danger: #FF4E4D;
+    --blue: #4BA6EF;
+    --font: #9A9CAB;
+    --pure: #ffffff; 
+
+    --transition: all 0.4s;
+}
+
+
+
+
+/*---------- ALL TAGS  ----------*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C202C;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/*--------- Utility Classes ---------*/
+.flex{
+    display: flex;
+}
+
+.jb{
+    justify-content: space-between;
+}
+
+.jc{
+    justify-content: center;
+}
+
+.align{
+    align-items: center;
+}
+
+.event-elp {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+
+
+/*========= ASIDE & SIDEBAR ========== */
+main {
+    display: grid;
+    grid-template-columns: 16rem auto;
+    gap: 2rem;
+    width: 96%;
+    margin: 1rem auto 1rem;
+}
+
+main aside {
+    background: var(--secondary);
+    border-radius: 25px;
+    margin: 1.10rem 0 1rem 0;
+    height: 92vh;
+    padding: 1rem 0 0rem 2rem;
+}
+
+main aside .sidebar .logo {
+    margin: 1rem 0 4rem 0;
+}
+
+main aside .sidebar .logo img {
+    width: 35px;
+    margin-right: 1.5rem;
+}
+
+main aside .sidebar .logo h4 {
+    font-weight: 400;
+    color: var(--font);
+}
+
+main aside .sidebar a {
+    display: flex;
+    align-items: center;
+    color: var(--font);
+    margin-bottom: 2rem;
+}
+
+main aside .sidebar a h4 {
+    font-weight: 400;
+    margin-left: 1.5rem;
+}
+
+main aside .sidebar a.active:before {
+    content: '';
+    width: 6px;
+    height: 6%;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    left: 34px;
+    background: var(--primary);
+}
+
+main aside .sidebar a.active{
+    color: var(--pure);
+}
+
+main aside .sidebar a{
+    transition: var(--transition);
+}
+
+main aside .sidebar a:hover {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+main aside .scheduled-events .event-heading h4 {
+    color: var(--pure);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 4rem 0 2.2rem 0;
+}
+
+main aside .scheduled-events .event-1 .elp-1 {
+    border: 3px solid var(--blue);
+}
+
+main aside .scheduled-events .event-2 .elp-2 {
+    border: 3px solid var(--primary);
+}
+
+main aside .scheduled-events .event-3 .elp-3 {
+    border: 3px solid var(--success);
+}
+
+main aside .scheduled-events > div h4 {
+    color: var(--font);
+    font-weight: 400;
+    margin-left: 1.5rem;
+}
+
+main aside .scheduled-events .event-items > div {
+    margin-bottom: 1.2rem;
+    transition: var(--transition);
+}
+
+main aside .scheduled-events .event-items > div:hover {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+
+
+
