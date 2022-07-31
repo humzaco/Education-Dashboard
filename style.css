@@ -30,12 +30,14 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+
 }
 
 body {
     background-color: #1C202C;
     font-family: 'Poppins', sans-serif;
 }
+
 
 
 
@@ -62,6 +64,7 @@ body {
     height: 20px;
     border-radius: 50%;
 }
+
 
 
 
@@ -213,6 +216,7 @@ section.middle .middle-top .middle-top-search .search-icon {
     padding: 0.8rem 0.8rem 0.8rem 0.8rem;
     border-radius: 15px 30px 30px 15px;
     margin-right: 1.5rem;
+    cursor: pointer;
 }
 
 section.middle .middle-top .middle-top-search .chat {
@@ -225,6 +229,7 @@ section.middle .middle-top .middle-top-search .chat {
     color: var(--pure);
     border-radius: 15px;
     margin-right: 3rem;
+    cursor: pointer;
 }
 
 section.middle .middle-top .middle-top-search .notification {
@@ -236,6 +241,7 @@ section.middle .middle-top .middle-top-search .notification {
     background: var(--primary-light);
     color: var(--pure);
     border-radius: 30px;
+    cursor: pointer;
 }
 
 section.middle .middle-top .middle-top-search .notification-num {
@@ -250,3 +256,73 @@ section.middle .middle-top .middle-top-search .notification-num {
     height: 15px;
     margin: 0 0 17px -8px;
 }
+
+
+
+/*========= MIDDLE CENTER ========== */
+section.middle .middel-courses {
+    row-gap: 2rem;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+}
+
+section.middle .middel-courses .course-heading h1 {
+    margin-right: 18rem;
+}
+
+
+
+section.middle .middel-courses .course-heading h1, section.middle .middel-courses .course-heading-c h1 {
+    color: var(--pure);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+section.middle .middel-courses i{
+    color: var(--pure);
+    padding: 0.4rem;
+    background: var(--primary-light);
+    border-radius: 8px;
+}
+
+section.course-content .courses-middle .hot1 {
+    background: var(--secondary);
+    width: 70px;
+    height: 270px;
+    align-items: center;
+} 
+
+section.course-content .courses-middle .hot1 .co-img-icon img {
+    width: 30px;
+    z-index: 1;
+}
+
+section.course-content .courses-middle .hot1 .co-img-icon i{
+    position: relative;
+    left: -24px;
+    top: 9px;
+    z-index: 2;
+}
+
+section.course-content .courses-middle .hot1 .heading-co {
+    transform: rotate(-90deg);
+    color: var(--pure);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
