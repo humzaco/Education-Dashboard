@@ -71,11 +71,6 @@ body {
     cursor: pointer;
 }
 
-.success {
-    background: var(--success-light);
-    color: var(--success);
-}
-
 
 
 
@@ -299,6 +294,7 @@ section.middle .middel-courses i{
     padding: 0.4rem;
     background: var(--primary-light);
     border-radius: 8px;
+    cursor: pointer;
 }
 
 section.course-content .courses-middle .hot1 {
@@ -373,9 +369,6 @@ section.course-content .courses-middle .hot1 .icon-co-h3 {
     background-color: var(--success-light);
     color: var(--success);
 }
-
-
-
 
 
 
@@ -519,4 +512,70 @@ section.course-content .courses-middle .hot2 .icon-co i.co-icon-l3 {
 
 section.course-content .courses-middle .hot2:hover {
     box-shadow: -6px -5px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+/*========= MIDDLE PART-2 ========== */
+section.course-content .clandar-middle .clandar-top-weekend {
+    background: var(--secondary);
+    color: var(--pure);
+    padding: 0.65rem 3rem 0.65rem 2.5rem;
+    margin-left: 13rem;
+    border-radius: 10px;
+    box-shadow: -6px -5px 40px rgba(0, 0, 0, 0.25);
+}
+
+section.course-content .clandar-middle .clandar-top-weekend ul li {
+    padding-right: 2.5rem;
+
+}
+
+section.course-content .clandar-middle .clandar-top-weekend ul li.laste-li {
+    padding-right: 3px;
+}
+
+section.course-content .clandar-middle .clandar-date {
+    /* background: var(--secondary); */
+    width: 33.125rem;
+    height: 14.063rem;
+    margin-left: 13.125rem;
+}
+
+section.course-content .clandar-middle .clandar-date ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.625rem;
+    margin-top: 1rem;
+}
+
+section.course-content .clandar-middle .clandar-date ul li{
+    width: 40px;
+    height: 60px;
+    font-size: 1rem;
+    color: var(--pure);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    transition: all 0.5s ease;
+}
+
+section.course-content .clandar-middle .clandar-date ul li.active {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-light);
+    border-radius: 50%;
+}
+
+section.course-content .clandar-middle .clandar-date ul li:hover {
+    background: var(--primary-light);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
