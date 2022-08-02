@@ -8,9 +8,11 @@
     --primary: #E5920E;
     --primary-light: #815f2a;
     --secondary: #282B3A;
-    --success: #0CAB97;
+    --success: #12c0a9;
+    --success-light: #2b7a70;
     --danger: #FF4E4D;
     --blue: #4BA6EF;
+    --blue-light: #2a5373;
     --font: #9A9CAB;
     --pure: #ffffff; 
 
@@ -65,6 +67,15 @@ body {
     border-radius: 50%;
 }
 
+.cp {
+    cursor: pointer;
+}
+
+.success {
+    background: var(--success-light);
+    color: var(--success);
+}
+
 
 
 
@@ -84,6 +95,11 @@ main aside {
     margin: 1.10rem 0 1rem 0;
     height: 92vh;
     padding: 1rem 0 0rem 2rem;
+    transition: all 0.6s ease;
+}
+
+main aside:hover {
+    box-shadow: -6px -5px 40px rgba(0, 0, 0, 0.25);
 }
 
 main aside .sidebar .logo {
@@ -263,11 +279,11 @@ section.middle .middle-top .middle-top-search .notification-num {
 section.middle .middel-courses {
     row-gap: 2rem;
     justify-content: space-between;
-    margin-top: 3.5rem;
+    margin: 3.5rem 0 3.5rem 0;
 }
 
 section.middle .middel-courses .course-heading h1 {
-    margin-right: 18rem;
+    margin-right: 11.7rem;
 }
 
 
@@ -289,24 +305,73 @@ section.course-content .courses-middle .hot1 {
     background: var(--secondary);
     width: 70px;
     height: 270px;
-    align-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+    padding: 1rem;
+    margin-right: 2rem;
+    transition: all 0.6s ease;
 } 
 
+section.course-content .courses-middle .hot1:hover {
+    box-shadow: -6px -5px 40px rgba(0, 0, 0, 0.25);
+}
+
+section.course-content .courses-middle .hot1 .co-img-icon {
+    padding-left: 1.5rem;
+}
+
 section.course-content .courses-middle .hot1 .co-img-icon img {
-    width: 30px;
+    width: 40px;
     z-index: 1;
 }
 
 section.course-content .courses-middle .hot1 .co-img-icon i{
+    color: var(--pure);
     position: relative;
-    left: -24px;
-    top: 9px;
+    left: -32px;
+    top: 13px;
     z-index: 2;
 }
 
-section.course-content .courses-middle .hot1 .heading-co {
+section.course-content .courses-middle .hot1 .heading-co{
     transform: rotate(-90deg);
     color: var(--pure);
+    flex-direction: column;
+}
+
+section.course-content .courses-middle .hot1 .heading-co span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+section.course-content .courses-middle .hot1 .heading-co p {
+    font-size: 10px;
+    color: var(--font);
+}
+
+section.course-content .courses-middle .hot1 .icon-co-h1, section.course-content .courses-middle .hot1 .icon-co-h2, section.course-content .courses-middle .hot1 .icon-co-h3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+} 
+
+section.course-content .courses-middle .hot1 .icon-co-h1 {
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+section.course-content .courses-middle .hot1 .icon-co-h2 {
+    background-color: var(--blue-light);
+    color: var(--blue);
+}
+
+section.course-content .courses-middle .hot1 .icon-co-h3 {
+    background-color: var(--success-light);
+    color: var(--success);
 }
 
 
@@ -316,13 +381,142 @@ section.course-content .courses-middle .hot1 .heading-co {
 
 
 
+section.course-content .courses-middle .hot2 {
+    background: var(--secondary);
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+    flex-direction: column;
+    padding: 1rem;
+    margin-right: 2rem;
+} 
+
+section.course-content .courses-middle .hot2 .pro-gr img {
+    width: 25px;
+    margin-right: 0.6rem;
+}
+
+section.course-content .courses-middle .hot2 .pro-gr p {
+    color: var(--font);
+    font-size: 10px;
+    margin-right: 2rem;
+}
+
+section.course-content .courses-middle .hot2 .pro-gr h5 {
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 0.2rem 0.9rem;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+section.course-content .courses-middle .hot2 .pro-gr {
+    margin-bottom: 1rem;
+}
+
+section.course-content .courses-middle .hot2 {
+    padding-left: 1.5rem;
+    transition: all 0.6s ease;
+}
+
+section.course-content .courses-middle .hot2 .co-img-icon img {
+    width: 40px;
+    z-index: 1;
+}
+
+section.course-content .courses-middle .hot2 .co-img-icon i{
+    color: var(--pure);
+    position: relative;
+    /* left: -32px;
+    top: 13px; */
+    z-index: 2;
+}
+
+section.course-content .courses-middle .hot2 .heading-co{
+    color: var(--pure);
+    flex-direction: column;
+}
+
+section.course-content .courses-middle .hot2 .heading-co p {
+    font-size: 10px;
+}
+
+section.course-content .courses-middle .hot2 .icon-co i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-light);
+    color: var(--primary);
+} 
+
+
+section.course-content .courses-middle .hot2 .co-img-icon .img-icon-m img {
+    z-index: 1;
+}
+
+section.course-content .courses-middle .hot2 .co-img-icon .img-icon-m i {
+    position: relative;
+    left: -32px;
+    top: -15px;
+    z-index: 2;
+}
+
+section.course-content .courses-middle .hot2 .co-img-icon, section.course-content .courses-middle .hot2 .heading-co, section.course-content .courses-middle .hot2 .lesson-co {
+    margin-bottom: 0.8rem;
+}
+
+section.course-content .courses-middle .hot2 .almost-complete {
+    margin-bottom: 20px;
+}
+
+section.course-content .courses-middle .hot2 .heading-co span {
+    font-weight: 200;
+}
+
+section.course-content .courses-middle .hot2 .lesson-co i {
+    padding-right: 0.4rem;
+    color: var(--blue);
+}
+
+section.course-content .courses-middle .hot2 .lesson-co p {
+    padding-right: 1rem;
+    color: var(--font);
+    font-size: 12px;
+}
+
+section.course-content .courses-middle .hot2 .almost-complete .online-elep {
+    width: 8px;
+    height: 8px;
+    background: var(--success);
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+
+section.course-content .courses-middle .hot2 .almost-complete p {
+    color: var(--pure);
+    font-size: 10px;
+}
 
 
 
+section.course-content .courses-middle .hot2 .icon-co i {
+    margin-right: 1rem;
+    cursor: pointer;
+}
 
+section.course-content .courses-middle .hot2 .icon-co i.co-icon-l2 {
+    background: var(--blue-light);
+    color: var(--blue);
+}
 
+section.course-content .courses-middle .hot2 .icon-co i.co-icon-l3 {
+    background: var(--success-light);
+    color: var(--success);
+}
 
-
-
-
-
+section.course-content .courses-middle .hot2:hover {
+    box-shadow: -6px -5px 40px rgba(0, 0, 0, 0.25);
+}
