@@ -5,13 +5,13 @@
 
 /*---------- COLORS  ----------*/
 :root{
-    --primary: #E5920E;
+    --primary: #f29c11;
     --primary-light: #815f2a;
     --secondary: #282B3A;
     --success: #12c0a9;
     --success-light: #2b7a70;
     --danger: #FF4E4D;
-    --blue: #4BA6EF;
+    --blue: #3e91d5;
     --blue-light: #2a5373;
     --font: #9A9CAB;
     --pure: #ffffff; 
@@ -38,7 +38,9 @@
 body {
     background-color: #1C202C;
     font-family: 'Poppins', sans-serif;
+    color: var(--pure);
 }
+
 
 
 
@@ -188,7 +190,7 @@ main aside .scheduled-events .event-items > div:hover {
 
 /*========= MIDDLE TOP ========== */
 section.middle {
-    margin: 2rem;
+    margin: 1rem 2rem 0 2rem;
 }
 
 section.middle .middle-top .middle-top-profile img {
@@ -274,7 +276,7 @@ section.middle .middle-top .middle-top-search .notification-num {
 section.middle .middel-courses {
     row-gap: 2rem;
     justify-content: space-between;
-    margin: 3.5rem 0 3.5rem 0;
+    margin: 2rem 0 1rem 0;
 }
 
 section.middle .middel-courses .course-heading h1 {
@@ -420,8 +422,6 @@ section.course-content .courses-middle .hot2 .co-img-icon img {
 section.course-content .courses-middle .hot2 .co-img-icon i{
     color: var(--pure);
     position: relative;
-    /* left: -32px;
-    top: 13px; */
     z-index: 2;
 }
 
@@ -524,7 +524,7 @@ section.course-content .clandar-middle .clandar-top-weekend {
     background: var(--secondary);
     color: var(--pure);
     padding: 0.65rem 3rem 0.65rem 2.5rem;
-    margin-left: 13rem;
+    margin-left: 6rem;
     border-radius: 10px;
     box-shadow: -6px -5px 40px rgba(0, 0, 0, 0.25);
 }
@@ -539,10 +539,9 @@ section.course-content .clandar-middle .clandar-top-weekend ul li.laste-li {
 }
 
 section.course-content .clandar-middle .clandar-date {
-    /* background: var(--secondary); */
     width: 33.125rem;
     height: 14.063rem;
-    margin-left: 13.125rem;
+    margin-left: 6.125rem;
 }
 
 section.course-content .clandar-middle .clandar-date ul {
@@ -562,7 +561,7 @@ section.course-content .clandar-middle .clandar-date ul li{
     justify-content: center;
     align-items: center;
     margin-left: 2rem;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 section.course-content .clandar-middle .clandar-date ul li.active {
@@ -578,4 +577,183 @@ section.course-content .clandar-middle .clandar-date ul li:hover {
     width: 40px;
     height: 40px;
     cursor: pointer;
+}
+
+section.course-content {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+/*========= MIDDLE PART-3 ========== */
+section.middle .middle-tsc .today-lecture h1, section.middle .middle-tsc .statistics h1 {
+    color: var(--pure);
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.middle .middle-tsc .today-lecture .date-cla, section.middle .middle-tsc .today-lecture .location {
+    margin-bottom: 2rem;
+}
+
+section.middle .middle-tsc .today-lecture .date-cla i {
+    background: var(--blue-light);
+    padding: 1.5rem;
+    border-radius: 16px;
+    color: var(--blue);
+    margin-right: 1rem;
+}
+
+section.middle .middle-tsc .today-lecture .date-cla .date-cla-data p, section.middle .middle-tsc .today-lecture .location .location-data p, section.middle .middle-tsc .today-lecture .accept-video .accept-video-data p {
+    color: var(--font);
+    font-size: 12px;
+}
+
+section.middle .middle-tsc .today-lecture .date-cla .date-cla-data h4, section.middle .middle-tsc .today-lecture .location .location-data h4, section.middle .middle-tsc .today-lecture .accept-video .accept-video-data h4 {
+    color: var(--pure);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+section.middle .middle-tsc .today-lecture .location i {
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-right: 1rem;
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+section.middle .middle-tsc .today-lecture .accept-video i {
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-right: 1rem;
+    background: var(--success-light);
+    color: var(--success);
+}
+
+
+
+
+/*========= MIDDLE PART-4 ========== */
+section.middle .middle-tsc .statistics {
+    margin-left: 6rem;
+}
+ 
+section.middle .middle-tsc .statistics .statistic-all-data {
+    background: var(--secondary);
+    border-radius: 15px;
+    width: 585px;
+    padding: 1rem 2rem;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .details {
+    margin-bottom: 1.3rem;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .details h3 {
+    font-weight: 400;
+font-size: 20px;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .details .details-right p {
+    color: var(--font);
+    font-size: 15px;
+    margin-right: 1rem;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .details .details-right .yearly-icon-text {
+    background: var(--primary-light);
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .details .details-right .yearly-icon-text h4 {
+    font-size: 12px;
+    font-weight: 200;
+    color: var(--primary);
+    margin-right: 0.5rem;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .details .details-right .yearly-icon-text i {
+    color: var(--primary);
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .num-left p {
+    margin-bottom: 1rem;
+    color: var(--font);
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .num-bottom {
+    margin-left: 3.5rem;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .num-bottom p {
+    margin-right: 2rem;
+    color: var(--font);
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .num-left{
+    align-items: flex-end;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar > div {
+    margin-bottom: 1rem;
+    margin-left: 0.2rem;
+    border-radius: 5px 5px 0 0;
+}
+section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar {
+    align-items: flex-end;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item1 {
+    background: var(--success);
+    width: 35px;
+    height: 55px;
+    margin-left: 1.6rem;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item2 {
+    background: var(--primary);
+    width: 35px;
+    height: 175px;
+    margin-left: 1.95rem;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item3 {
+    background: var(--blue);
+    width: 35px;
+    height: 100px;
+    margin-left: 1.95rem;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item4 {
+    background: var(--success);
+    width: 35px;
+    height: 125px;
+    margin-left: 1.95rem;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item5 {
+    background: var(--primary);
+    width: 35px;
+    height: 75px;
+    margin-left: 2.2rem;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item6 {
+    background: var(--danger);
+    width: 35px;
+    height: 60px;
+    margin-left: 1.95rem;
+}
+
+section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item7 {
+    background: var(--success);
+    width: 35px;
+    height: 125px;
+    margin-left: 1.95rem;
 }
