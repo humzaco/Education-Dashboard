@@ -63,6 +63,10 @@ body {
     align-items: center;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .event-elp {
     width: 20px;
     height: 20px;
@@ -280,7 +284,11 @@ section.middle .middel-courses {
 }
 
 section.middle .middel-courses .course-heading h1 {
-    margin-right: 11.7rem;
+    margin-right: 17.7rem;
+}
+
+section.middle .middel-courses .course-heading-c h1 {
+    margin-left: 9.7rem;
 }
 
 
@@ -297,6 +305,10 @@ section.middle .middel-courses i{
     background: var(--primary-light);
     border-radius: 8px;
     cursor: pointer;
+}
+
+section.middle .middel-courses .mcicon {
+    margin-left: 15rem;
 }
 
 section.course-content .courses-middle .hot1 {
@@ -588,11 +600,12 @@ section.course-content {
 
 
 /*========= MIDDLE PART-3 ========== */
-section.middle .middle-tsc .today-lecture h1, section.middle .middle-tsc .statistics h1 {
+section.middle .middle-tsc .today-lecture h1, section.middle .middle-tsc .statistics h1, section.middle .middle-tsc .class-status h1 {
     color: var(--pure);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 section.middle .middle-tsc .today-lecture .date-cla, section.middle .middle-tsc .today-lecture .location {
@@ -714,6 +727,7 @@ section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .stat
     width: 35px;
     height: 55px;
     margin-left: 1.6rem;
+    animation: item01 3s alternate ;
 }
 
 section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item2 {
@@ -721,6 +735,7 @@ section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .stat
     width: 35px;
     height: 175px;
     margin-left: 1.95rem;
+    animation: item02 3s alternate ;
 }
 
 section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item3 {
@@ -728,13 +743,15 @@ section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .stat
     width: 35px;
     height: 100px;
     margin-left: 1.95rem;
+    animation: item03 3s alternate ;
 }
 
 section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item4 {
-    background: var(--success);
+    background: var(--danger);
     width: 35px;
     height: 125px;
     margin-left: 1.95rem;
+    animation: item04 3s alternate ;
 }
 
 section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item5 {
@@ -742,6 +759,7 @@ section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .stat
     width: 35px;
     height: 75px;
     margin-left: 2.2rem;
+    animation: item05 3s alternate ;
 }
 
 section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item6 {
@@ -749,6 +767,7 @@ section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .stat
     width: 35px;
     height: 60px;
     margin-left: 1.95rem;
+    animation: item06 2.7s alternate ;
 }
 
 section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .statistics-bar .item7 {
@@ -756,4 +775,134 @@ section.middle .middle-tsc .statistics .statistic-all-data .statistic-bars .stat
     width: 35px;
     height: 125px;
     margin-left: 1.95rem;
+    animation: item07 3s alternate ;
+}
+
+
+
+  @keyframes item07 {
+    from {top: 0px; height: 0px;}
+    to {top: 200px; height: 125px;}
+  }
+
+  @keyframes item06 {
+    from {top: 0px; height: 0px;}
+    to {top: 200px; height: 60px;}
+  }
+  @keyframes item05 {
+    from {top: 0px; height: 0px;}
+    to {top: 200px; height: 75px;}
+  }
+  @keyframes item04 {
+    from {top: 0px; height: 0px;}
+    to {top: 200px; height: 125px;}
+  }
+  @keyframes item03 {
+    from {top: 0px; height: 0px;}
+    to {top: 200px; height: 100px;}
+  }
+  @keyframes item02 {
+    from {top: 0px; height: 0px;}
+    to {top: 200px; height: 175px;}
+  }
+  @keyframes item01 {
+    from {top: 0px; height: 0px;}
+    to {top: 200px; height: 55px;}
+  }
+
+
+
+
+
+
+
+
+
+
+
+/*========= MIDDLE PART-5 ========== */
+section.middle .middle-tsc .class-status{
+    margin-left: 4rem;
+}
+
+section.middle .middle-tsc .class-status .back-color {
+    background: var(--secondary);
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+section.middle .middle-tsc .class-status .back-color .main-text-data {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.middle .middle-tsc .class-status .back-color .text-details {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+section.middle .middle-tsc .class-status .back-color .text-details h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--font);
+}
+
+section.middle .middle-tsc .class-status .back-color .text-details h3 span {
+    color: var(--primary);
+    font-size: 27px;
+}
+
+section.middle .middle-tsc .class-status .back-color .text-details p {
+    color: var(--font);
+    font-size: 13px;
+}
+
+section.middle .middle-tsc .class-status .back-color .ellips img {
+    margin-top: 2rem;
+}
+
+section.middle .middle-tsc .class-status .back-color .parsentage{
+    position: relative;
+}
+
+section.middle .middle-tsc .class-status .back-color .parsentage span{
+    position: absolute;
+    top: -60px;
+    left: -25px;
+    font-size: 30px;
+    color: var(--primary);
+}
+
+section.middle .middle-tsc .class-status .back-color .prograss {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section.middle .middle-tsc .class-status .back-color .prograss .ellip-1 {
+    width: 15px;
+    height: 15px;
+    background: var(--primary);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+section.middle .middle-tsc .class-status .back-color .prograss .ellip-2 {
+    width: 15px;
+    height: 15px;
+    background: #D9D9D9;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+section.middle .middle-tsc .class-status .back-color .prograss h4 {
+    font-size: 12px;
+    color: var(--pure);
+    font-weight: 400;
+    margin-right: 2rem;
 }
