@@ -24,26 +24,24 @@
 
 /*---------- ALL TAGS  ----------*/
 *{
-    margin: 0;
+    /* margin: 0;
     padding: 0;
     outline: 0;
     border: 0;
     appearance: none;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
-
+    box-sizing: border-box; */
 }
 
-body {
+main {
+    margin: 1.5rem;
+}
+
+.container-fluid {
     background-color: #1C202C;
-    font-family: 'Poppins', sans-serif;
-    color: var(--pure);
+    margin: 0;
 }
-
-
-
-
 
 
 /*--------- Utility Classes ---------*/
@@ -81,3 +79,109 @@ body {
 
 
 
+
+
+
+
+
+/*========= Side Bar Menu ========== */
+main.container-fluid .side-bar {
+    height: 97vh;
+    border-radius: 20px;
+    margin: 1.5rem 0 1.5rem 2rem;
+    background-color: #282B3A;
+    padding: 3rem 0 0 3rem ;
+} 
+
+.logo {
+    margin-bottom: 3rem;
+}
+
+ .logo img {
+    width: 35px;
+    margin-right: 1.5rem;
+ }
+
+ .logo h4 {
+    font-weight: 400;
+    color: var(--font);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+ }
+
+
+ main .sidebar-icon a {
+    display: flex;
+    align-items: center;
+    color: var(--font);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+main .sidebar-icon a h4 {
+    font-weight: 400;
+    margin-left: 1.5rem;
+    font-size: 18px;
+}
+
+main .sidebar-icon a.active:before {
+    content: '';
+    width: 6px;
+    height: 6%;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    left: 34px;
+    background: var(--primary);
+}
+
+main .sidebar-icon a.active{
+    color: var(--pure);
+}
+
+main .sidebar-icon a{
+    transition: var(--transition);
+}
+
+main .sidebar-icon a:hover {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+
+
+main .scheduled-events .event-heading h4 {
+    color: var(--pure);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 3rem 0 2.2rem 0;
+}
+
+main .scheduled-events .event-1 .elp-1 {
+    border: 3px solid var(--blue);
+}
+
+main .scheduled-events .event-2 .elp-2 {
+    border: 3px solid var(--primary);
+}
+
+main .scheduled-events .event-3 .elp-3 {
+    border: 3px solid var(--success);
+}
+
+main .scheduled-events > div h4 {
+    color: var(--font);
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 1.5rem;
+}
+
+main .scheduled-events .event-items > div {
+    margin-bottom: 1.2rem;
+    transition: var(--transition);
+}
+
+main .scheduled-events .event-items > div:hover {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
